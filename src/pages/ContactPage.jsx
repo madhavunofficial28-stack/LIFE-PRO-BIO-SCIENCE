@@ -258,7 +258,7 @@ const ContactPage = () => {
               </div>
               <div>
                 <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Email</span>
-                <h5 className="font-bold text-slate-800 text-base group-hover:text-teal-600 transition-colors">support@lifebioscience.com</h5>
+                <h5 className="font-bold text-slate-800 text-base group-hover:text-teal-600 transition-colors">lifeprobioscience@gamil.com</h5>
                 <p className="text-slate-500 text-xs">We reply within 24 hours</p>
               </div>
             </div>
@@ -269,7 +269,7 @@ const ContactPage = () => {
               </div>
               <div>
                 <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Office</span>
-                <h5 className="font-bold text-slate-800 text-base group-hover:text-slate-900 transition-colors">Life Bio Science</h5>
+                <h5 className="font-bold text-slate-800 text-base group-hover:text-slate-900 transition-colors">Life Pro Bio Science</h5>
                 <p className="text-slate-500 text-xs">Vadodara – 390001, Gujarat, INDIA</p>
               </div>
             </div>

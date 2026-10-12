@@ -88,7 +88,7 @@ const ServicesPage = () => {
       icon: HeartPulse,
       title: 'Oncology Care & Immunotherapy Solutions',
       category: 'Oncology & Immunotherapy',
-      bgImage: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1400',
+      bgImage: '/SOP/Oncology Care & Immunotherapy Solutions - services.jpeg',
       desc: 'We supply custom Cancer Care Kits and advanced bio-therapeutics powered by our HybriCure® electrofusion technology. We provide comprehensive patient hygiene, oral care, and post-chemotherapy recovery solutions to hospitals and cancer treatment centers.',
       features: [
         'Custom Cancer Patient Supportive Care Kits',
@@ -104,7 +104,7 @@ const ServicesPage = () => {
       icon: FlaskConical,
       title: 'Rapid Molecular & Dairy Diagnostic Services',
       category: 'Food Safety & Dairy Diagnostics',
-      bgImage: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=1400',
+      bgImage: '/SOP/Rapid Molecular & Dairy Diagnostic - Services.png',
       desc: 'Rapid PCR and adulteration test kits tailored for dairy plants, collection centers, and testing labs. High-accuracy test strips detect chemical adulterants like urea, starch, detergents, and neutralizers within 5 minutes.',
       features: [
         'Rapid 5-Minute Adulteration Detection Strips',
@@ -137,7 +137,7 @@ const ServicesPage = () => {
       title: 'OEM, Contract Kitting & Private Labeling',
       category: 'Custom & Bulk Manufacturing',
       // Updated reliable image URL for OEM / Contract Kitting
-      bgImage: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=1400',
+      bgImage: '/SOP/OEM, Contract Kitting & Private Labeling - servics.png',
       desc: 'End-to-end OEM manufacturing, contract formulation, and customized kitting services for diagnostic chains, hospitals, and biotech partners. Fully compliant with international quality management standards.',
       features: [
         'Private Labeling & Packaging Customization',

@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-slate-300 pt-12 pb-6 px-6 md:px-10 border-t border-slate-800 relative z-20">
+    <footer className="w-full bg-gradient-to-br from-blue-100 via-teal-50 to-blue-200 text-slate-800 pt-12 pb-6 px-6 md:px-10 relative z-20 font-sans border-none">
       
       {/* TOP SECTION */}
       <div className="w-full flex flex-col lg:flex-row justify-between items-start gap-10">
@@ -13,13 +13,13 @@ const Footer = () => {
           {/* Brand Logo Display */}
           <a href="/" className="inline-block mb-4">
             <img
-              src="\life pro bioscience blue logo.jpeg"
+              src="/Golden_Life_Pro_Bioscience_Logo-removebg-preview.png"
               alt="LIFE BIO SCIENCE"
-              className="h-14 w-auto object-contain rounded-lg"
+              className="h-14 w-auto object-contain"
             />
           </a>
           
-          <p className="text-slate-400 text-sm leading-relaxed mb-6 font-medium">
+          <p className="text-slate-600 text-sm leading-relaxed mb-6 font-medium">
             Pioneering precision molecular diagnostics, rapid PCR testing, and cell-based therapeutic technologies in oncology and clinical neurology.
           </p>
 
@@ -30,7 +30,7 @@ const Footer = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700/60 flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-all duration-300"
+              className="w-9 h-9 rounded-lg bg-white/70 border border-slate-300/60 flex items-center justify-center text-slate-700 hover:text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-teal-600 hover:border-transparent transition-all duration-300 shadow-sm"
               aria-label="Instagram"
             >
               <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -43,7 +43,7 @@ const Footer = () => {
               href="https://x.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700/60 flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-all duration-300"
+              className="w-9 h-9 rounded-lg bg-white/70 border border-slate-300/60 flex items-center justify-center text-slate-700 hover:text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-teal-600 hover:border-transparent transition-all duration-300 shadow-sm"
               aria-label="X"
             >
               <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -56,7 +56,7 @@ const Footer = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700/60 flex items-center justify-center text-slate-400 hover:text-white hover:bg-blue-600 hover:border-blue-600 transition-all duration-300"
+              className="w-9 h-9 rounded-lg bg-white/70 border border-slate-300/60 flex items-center justify-center text-slate-700 hover:text-white hover:bg-gradient-to-r hover:from-blue-600 hover:to-teal-600 hover:border-transparent transition-all duration-300 shadow-sm"
               aria-label="LinkedIn"
             >
               <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
@@ -71,40 +71,40 @@ const Footer = () => {
           
           {/* Quick Links */}
           <div>
-            <h4 className="text-white font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
-            <ul className="space-y-2.5 text-sm font-medium">
-              <li><a href="/" className="hover:text-teal-400 transition-colors">Home</a></li>
-              <li><a href="/about" className="hover:text-teal-400 transition-colors">About Us</a></li>
-              <li><a href="/services" className="hover:text-teal-400 transition-colors">Services</a></li>
-              <li><a href="/contact" className="hover:text-teal-400 transition-colors">Contact Us</a></li>
+            <h4 className="text-slate-900 font-bold mb-4 text-sm uppercase tracking-wider">Quick Links</h4>
+            <ul className="space-y-2.5 text-sm font-medium text-slate-700">
+              <li><a href="/" className="hover:text-teal-700 transition-colors">Home</a></li>
+              <li><a href="/about" className="hover:text-teal-700 transition-colors">About Us</a></li>
+              <li><a href="/services" className="hover:text-teal-700 transition-colors">Services</a></li>
+              <li><a href="/contact" className="hover:text-teal-700 transition-colors">Contact Us</a></li>
             </ul>
           </div>
 
-          {/* Featured Products (Mobile pe Quick Links ke baju me aayega) */}
+          {/* Featured Products */}
           <div>
-            <h4 className="text-white font-bold mb-4 text-sm uppercase tracking-wider">Featured Products</h4>
-            <ul className="space-y-2.5 text-sm font-medium">
-              <li><a href="/product/cancer-kit" className="hover:text-teal-400 transition-colors">Cancer Care & Diagnostics Kit</a></li>
-              <li><a href="/product/neurology-diagnosis-kit" className="hover:text-teal-400 transition-colors">Neurology Diagnosis Kit</a></li>
-              <li><a href="/product/rapid-milk-kit" className="hover:text-teal-400 transition-colors">Rapid Milk Testing Kit</a></li>
+            <h4 className="text-slate-900 font-bold mb-4 text-sm uppercase tracking-wider">Featured Products</h4>
+            <ul className="space-y-2.5 text-sm font-medium text-slate-700">
+              <li><a href="/product/cancer-kit" className="hover:text-teal-700 transition-colors">Cancer Care & Diagnostics Kit</a></li>
+              <li><a href="/product/neurology-diagnosis-kit" className="hover:text-teal-700 transition-colors">Neurology Diagnosis Kit</a></li>
+              <li><a href="/product/rapid-milk-kit" className="hover:text-teal-700 transition-colors">Rapid Milk Testing Kit</a></li>
             </ul>
           </div>
 
-          {/* Contact Info (Mobile pe full width span karega niche) */}
+          {/* Contact Info */}
           <div className="col-span-2 md:col-span-1 pt-2 md:pt-0">
-            <h4 className="text-white font-bold mb-4 text-sm uppercase tracking-wider">Contact Info</h4>
-            <ul className="space-y-3 text-sm text-slate-400 font-medium">
+            <h4 className="text-slate-900 font-bold mb-4 text-sm uppercase tracking-wider">Contact Info</h4>
+            <ul className="space-y-3 text-sm text-slate-700 font-medium">
               <li className="flex items-start gap-3">
-                <MapPin size={18} className="text-teal-400 shrink-0 mt-0.5" /> 
-                <span>Life Bio Science Park, Biotech Innovation Zone</span>
+                <MapPin size={18} className="text-teal-700 shrink-0 mt-0.5" /> 
+                <span>Vadodara – 390001, Gujarat, INDIA</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone size={18} className="text-teal-400 shrink-0" /> 
-                <span>+91 (800) 555-BIO-LAB</span>
+                <Phone size={18} className="text-teal-700 shrink-0" /> 
+                <span>+91 9173300247, +91 9157300247</span>
               </li>
               <li className="flex items-center gap-3">
-                <Mail size={18} className="text-teal-400 shrink-0" /> 
-                <span>info@lifebioscience.com</span>
+                <Mail size={18} className="text-teal-700 shrink-0" /> 
+                <span>lifeprobioscience@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -114,7 +114,7 @@ const Footer = () => {
       </div>
 
       {/* BOTTOM COPYRIGHT LINE */}
-      <div className="w-full border-t border-slate-800 mt-10 pt-4 text-left text-xs text-slate-500 font-medium">
+      <div className="w-full border-t border-slate-300/60 mt-10 pt-4 text-left text-xs text-slate-600 font-medium">
         © {new Date().getFullYear()} Life Bio Science Ltd. All rights reserved. Precision Molecular Diagnostics & Immunotherapy.
       </div>
     </footer>

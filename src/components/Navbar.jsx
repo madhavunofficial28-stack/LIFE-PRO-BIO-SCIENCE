@@ -30,7 +30,7 @@ const Navbar = () => {
         {/* Brand Logo - Updated to PNG format without background */}
         <a href="/" className="flex items-center">
           <img
-            src="\life pro bioscience white logo.jpeg"
+            src="/Golden_Life_Pro_Bioscience_Logo-removebg-preview.png"
             alt="LIFE BIO SCIENCE"
             className="h-[60px] w-auto object-contain bg-transparent"
           />
