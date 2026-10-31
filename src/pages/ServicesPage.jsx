@@ -10,7 +10,8 @@ import {
   Headphones, 
   ArrowRight, 
   CheckCircle2, 
-  ChevronRight
+  ChevronRight,
+  Activity
 } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -84,92 +85,91 @@ const ServicesPage = () => {
 
   const servicesList = [
     {
-      id: 'cancer-care-services',
-      icon: HeartPulse,
-      title: 'Oncology Care & Immunotherapy Solutions',
-      category: 'Oncology & Immunotherapy',
-      bgImage: '/SOP/Oncology Care & Immunotherapy Solutions - services.jpeg',
-      desc: 'We supply custom Cancer Care Kits and advanced bio-therapeutics powered by our HybriCure® electrofusion technology. We provide comprehensive patient hygiene, oral care, and post-chemotherapy recovery solutions to hospitals and cancer treatment centers.',
+      id: 'saliva-cancer-services',
+      icon: Activity,
+      title: 'Saliva-Based Cancer Biomarker Screening Services',
+      category: 'Electrochemical Biosensing & Screening',
+      bgImage: '/Saliva-Based Cancer Biomarker Screening - Services.png',
+      desc: 'An electrochemical biosensing platform utilizing Cyclic Voltammetry (CV) to detect breast, cervical, and prostate cancer-associated biomarkers through measurable electrical current changes in saliva samples.',
       features: [
-        'Custom Cancer Patient Supportive Care Kits',
-        'HybriCure® Cell Electrofusion Therapeutics',
-        'Post-Chemotherapy & Radiation Care Sets',
-        'Bulk Supply to Daycare Oncology Centers'
+        'Non-Invasive Saliva Specimen Handling',
+        'Cyclic Voltammetry (CV) Electrical Measurement',
+        'Screen-Printed Carbon Electrode Integration',
+        'Target Biomarker Analysis (BRCA1/2, HER2, HPV)'
       ],
       badgeColor: 'bg-rose-100/90 text-rose-800 border-rose-300',
       iconGradient: 'from-rose-500 to-pink-500'
     },
     {
-      id: 'milk-testing-services',
-      icon: FlaskConical,
-      title: 'Rapid Molecular & Dairy Diagnostic Services',
-      category: 'Food Safety & Dairy Diagnostics',
-      bgImage: '/SOP/Rapid Molecular & Dairy Diagnostic - Services.png',
-      desc: 'Rapid PCR and adulteration test kits tailored for dairy plants, collection centers, and testing labs. High-accuracy test strips detect chemical adulterants like urea, starch, detergents, and neutralizers within 5 minutes.',
-      features: [
-        'Rapid 5-Minute Adulteration Detection Strips',
-        'FSSAI & ISO Compliant Diagnostic Standards',
-        'Bulk PCR Diagnostic Kit Manufacturing',
-        'On-site Training for Dairy Quality Personnel'
-      ],
-      badgeColor: 'bg-emerald-100/90 text-emerald-800 border-emerald-300',
-      iconGradient: 'from-emerald-500 to-teal-500'
-    },
-    {
       id: 'neurology-diagnostic-services',
       icon: Brain,
-      title: 'Clinical Neurology Examination & Diagnostics',
-      category: 'Neurological Diagnostics',
-      bgImage: 'https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&q=80&w=1400',
-      desc: 'Medical-grade neurological assessment tools and biomarker detection kits for neurologists, diagnostic centers, and medical institutes. Designed for maximum accuracy in sensory, nerve, and reflex evaluations.',
+      title: 'Rapid Neurological Disorders Biomarker Diagnostics',
+      category: 'Neurology & Rapid Screening',
+      bgImage: '/Rapid Neurological Disorders Biomarker Diagnostics - services.png',
+      desc: 'Advanced biomarker-based screening solutions designed to identify biological indicators associated with Alzheimer’s disease, Parkinson’s disease, stroke, epilepsy, multiple sclerosis, migraine, and traumatic brain injury.',
       features: [
-        'CE & ISO Certified Neurological Equipment',
-        'Sensory & Nerve Conductive Testing Kits',
-        'Clinical Examination Sets for Medical Colleges',
-        'Ergonomic, Sterilized Medical Diagnostics'
+        'Early Assessment Support Across All Age Groups',
+        'Targeting High-Prevalence Nervous System Conditions',
+        'Advanced Biomarker Tracking (p-tau, NfL, GFAP, CGRP)',
+        'Timely Clinical Evaluation Pathways'
       ],
       badgeColor: 'bg-blue-100/90 text-blue-800 border-blue-300',
       iconGradient: 'from-blue-600 to-cyan-500'
     },
     {
+      id: 'fertility-solutions-services',
+      icon: HeartPulse,
+      title: 'Male and Female Fertility Health Solutions',
+      category: 'Reproductive Health & Assessment',
+      bgImage: '/Male and Female Fertility Health Solutions - servise.png',
+      desc: 'Comprehensive reproductive health evaluation services supporting fertility assessment for both women (ovarian function, hormonal balance, ovulation, menstrual health) and men (sperm concentration, movement, shape, hormones).',
+      features: [
+        'Female Reproductive & Ovarian Health Assessment',
+        'Male Sperm Health & Concentration Evaluation',
+        'Hormonal Balance & Reproductive Function Analysis',
+        'Informed Decision Support for Individuals & Couples'
+      ],
+      badgeColor: 'bg-emerald-100/90 text-emerald-800 border-emerald-300',
+      iconGradient: 'from-emerald-500 to-teal-500'
+    },
+    /* {
       id: 'oem-custom-manufacturing',
       icon: Factory,
-      title: 'OEM, Contract Kitting & Private Labeling',
+      title: 'OEM, Contract Kitting & Diagnostic Solutions',
       category: 'Custom & Bulk Manufacturing',
-      // Updated reliable image URL for OEM / Contract Kitting
       bgImage: '/SOP/OEM, Contract Kitting & Private Labeling - servics.png',
-      desc: 'End-to-end OEM manufacturing, contract formulation, and customized kitting services for diagnostic chains, hospitals, and biotech partners. Fully compliant with international quality management standards.',
+      desc: 'End-to-end OEM manufacturing, contract formulation, and customized kitting services for diagnostic chains, hospitals, and biotech partners, fully aligned with clinical quality management standards.',
       features: [
         'Private Labeling & Packaging Customization',
-        'ISO 13485 Certified Kitting Facilities',
+        'ISO & Clinical Quality Certified Facilities',
         'Custom Assay Development & R&D Support',
-        'Global Cold-Chain Shipping & Logistics'
+        'Secure Diagnostic Logistics & Reporting Support'
       ],
       badgeColor: 'bg-purple-100/90 text-purple-800 border-purple-300',
       iconGradient: 'from-purple-600 to-indigo-500'
-    }
+    } */
   ];
 
   const whyChooseUs = [
     {
       icon: ShieldCheck,
-      title: 'ISO & CE Standards',
-      desc: 'All products and diagnostic kits meet ISO 13485 and global clinical quality compliance.'
+      title: 'ISO & Clinical Standards',
+      desc: 'All solutions and screening services meet rigorous clinical quality and regulatory compliance.'
     },
     {
       icon: Clock,
       title: 'Rapid & High Accuracy',
-      desc: 'Accelerated test results with up to 99.8% precision across diagnostic platforms.'
+      desc: 'Accelerated test results and precise electrochemical signal measurements.'
     },
     {
       icon: Truck,
-      title: 'Cold-Chain Logistics',
-      desc: 'Temperature-monitored packaging ensuring reagent integrity during transport.'
+      title: 'Reliable Logistics',
+      desc: 'Temperature-monitored packaging ensuring specimen and kit integrity during transport.'
     },
     {
       icon: Headphones,
       title: 'Scientific Support',
-      desc: 'Direct consultation and technical guidance from molecular biology experts.'
+      desc: 'Direct consultation and technical guidance from biosensor and molecular biology experts.'
     }
   ];
 
@@ -187,7 +187,7 @@ const ServicesPage = () => {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-blue-100/20 via-teal-50/40 to-transparent" />
       </div>
-      
+       
       {/* BREADCRUMB */}
       <nav aria-label="Breadcrumb" className="relative z-10 max-w-7xl mx-auto w-full mb-8">
         <ol className="flex items-center gap-2 text-xs md:text-sm text-slate-700 font-medium">
@@ -208,10 +208,10 @@ const ServicesPage = () => {
       {/* HERO SECTION */}
       <section className="services-hero-content text-center max-w-5xl mx-auto space-y-5 w-full relative z-10 mb-16 md:mb-20">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 leading-tight">
-          Comprehensive <span className="bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent">Diagnostic Services</span> & Kit Solutions
+          Comprehensive <span className="bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent">Diagnostic Services</span> & Solutions
         </h1>
         <p className="text-slate-800 text-base md:text-xl leading-relaxed max-w-4xl mx-auto font-medium">
-          We provide high-precision molecular diagnostic kits, rapid testing solutions, and contract manufacturing services for Oncology, Clinical Neurology, and Food Safety.
+          We provide saliva-based electrochemical cancer screening, rapid neurological biomarker testing, reproductive health solutions, and contract manufacturing services.
         </p>
       </section>
 
@@ -222,7 +222,7 @@ const ServicesPage = () => {
             What We Offer
           </span>
           <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900">Our Specialized Services</h2>
-          <p className="text-slate-600 text-sm md:text-base font-medium">Delivering precision-driven diagnostic, cellular therapy, and healthcare solutions.</p>
+          <p className="text-slate-600 text-sm md:text-base font-medium">Delivering precision-driven diagnostic, biosensing, and healthcare solutions.</p>
         </div>
 
         {/* FULL WIDTH ZIG-ZAG LAYOUT */}
@@ -237,7 +237,7 @@ const ServicesPage = () => {
                 className="service-item-row w-full"
               >
                 <div className={`flex flex-col lg:flex-row items-center gap-10 lg:gap-20 w-full ${isEven ? '' : 'lg:flex-row-reverse'}`}>
-                  
+                   
                   {/* Image Container Side */}
                   <div className="w-full lg:w-1/2">
                     <div className="relative group overflow-hidden rounded-3xl border border-slate-200/80 shadow-2xl h-[340px] sm:h-[450px] lg:h-[480px] w-full bg-slate-900">
@@ -247,7 +247,7 @@ const ServicesPage = () => {
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-slate-900/10 to-transparent" />
-                      
+                       
                       {/* Badge on Image */}
                       <div className="absolute top-6 left-6">
                         <span className={`text-xs md:text-sm font-bold px-4 py-2 rounded-full border shadow-sm ${service.badgeColor}`}>
@@ -348,10 +348,10 @@ const ServicesPage = () => {
               Get Started Today
             </span>
             <h2 className="text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-900">
-              Need Custom Kit Packaging or Bulk Diagnostic Supplies?
+              Need Custom Diagnostic Solutions or OEM Partnerships?
             </h2>
             <p className="text-slate-600 text-base md:text-xl leading-relaxed font-medium">
-              Contact our expert R&D team to request sample diagnostic kits or discuss OEM partnership solutions tailored to your organization.
+              Contact our expert team to discuss non-invasive screening technologies, neurological biomarker testing, or custom partnership solutions tailored to your organization.
             </p>
             <div className="pt-4 flex justify-center">
               <a

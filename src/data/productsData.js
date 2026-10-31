@@ -2,180 +2,179 @@ import { Dna, Activity, Brain, Milk, Shield, HeartPulse } from 'lucide-react';
 
 export const PRODUCTS_DATA = [
   {
-    id: 'cancer-kit',
-    name: 'HybriCure Dendritic Cell Vaccine (aHyC)',
-    category: 'Cell-Based Immunotherapy & Oncology',
-    sku: 'HYBRI-CURE-101',
-    badge: 'Personalized Cancer Immunotherapy',
-    icon: Dna,
-    image: '/cancer-care-kit.jpg',
+    id: 'saliva-cancer-detection',
+    name: 'Saliva-Based Cancer Biomarker Detection by Cyclic Voltammetry',
+    category: 'Electrochemical Biosensing & Cancer Screening',
+    sku: 'SALIVA-CANCER-101',
+    badge: 'Non-Invasive Saliva Screening',
+    icon: Activity,
+    image: '/Saliva-Based Cancer Biomarker Detection by Cyclic Voltammetry.jpg',
     
-    shortDesc: 'Proprietary electrofusion-based dendritic cell vaccine (aHyC) combining autologous tumor and dendritic cells for personalized cancer treatment.',
-    fullDesc: 'HybriCure uses proprietary electrofusion technology to produce immunohybridoma cells prepared from autologous tumor cells and dendritic cells to treat advanced cancer, including castration-resistant prostate cancer (CRPC). Developed in partnership with Celica Biomedical (Slovenia), it presents a broad repertoire of tumor-associated antigens to activate a patient-specific anti-tumor immune response with a 0% serious adverse events safety profile in reported clinical data.',
+    shortDesc: 'An electrochemical biosensing platform designed to detect cancer-associated biomarkers through measurable changes in electrical signals using saliva.',
+    fullDesc: 'Utilises Cyclic Voltammetry (CV), an electrochemical technique measuring changes in current as applied voltage varies. The system integrates screen-printed carbon electrodes, functionalised multi-walled carbon nanotubes (MWCNTs), DNA recognition probes, and a PVA-glutaraldehyde polymer matrix to detect target breast, cervical, and prostate cancer biomarkers in saliva for convenient screening.',
     specs: [
-      { label: 'Technology Platform', value: 'Proprietary Electrofusion Technology' },
-      { label: 'Therapeutic Class', value: 'Autologous Dendritic Cell Vaccine (aHyC)' },
-      { label: 'Administration Route', value: 'Intradermal Administration' },
-      { label: 'Marker Expression', value: '100% Dendritic Cell Marker Expression' },
-      { label: 'Clinical Survival', value: 'Median Overall Survival: 58.8 Months (+33 Mo)' },
-      { label: 'Safety Profile', value: '0% Serious Adverse Events Reported' }
+      { label: 'Technology Platform', value: 'Cyclic Voltammetry (CV) Biosensing' },
+      { label: 'Sensor Base', value: 'Screen-Printed Carbon Electrode' },
+      { label: 'Nanomaterial Surface', value: 'Functionalised Multi-Walled Carbon Nanotubes' },
+      { label: 'Recognition Element', value: 'DNA Recognition Probe / Antibodies / Aptamers' },
+      { label: 'Sample Specimen', value: 'Non-Invasive Saliva Sample' },
+      { label: 'Target Oncological Focus', value: 'Breast, Cervical & Prostate Cancer Biomarkers' }
     ],
     features: [
-      'Patient-Specific Approach: Uses tumor material derived directly from the individual patient to capture full antigen information.',
-      'Electrofusion Technology: Combines patient autologous tumor cells and professional antigen-presenting dendritic cells.',
-      '100% DC Marker Expression: High expression of dendritic cell markers supports superior antigen presentation capabilities.',
-      'Multi-Antigen Potential: Leverages the patient’s complete tumor-associated antigen repertoire rather than single targets.',
-      'Intradermal Delivery: Specifically designed for convenient intradermal administration through the skin.',
-      'Proven Clinical Survival: Reported 33-month median overall survival prolongation with a favorable safety profile.'
+      'Convenient Testing Workflows: Potential for simpler sample handling and non-invasive saliva collection.',
+      'Rapid Measurement: Electrochemical signals can be measured quickly for fast analytical results.',
+      'Portable Technology Potential: Screen-printed electrodes are suitable for compact sensor formats.',
+      'Biomarker-Specific Testing: Recognition elements designed for defined molecular or protein targets.',
+      'Target Biomarker Coverage: Detects key markers including BRCA1/2, HER2, HPV16/18, PSA, PCA3, and microRNAs.',
+      'Point-of-Care Potential: Explores future use outside central laboratories under performance requirements.'
     ],
     usageGuidelines: [
       {
         step: "01",
-        title: "Tumor Cell Extraction",
-        desc: "Isolate patient-derived tumor cells to provide individual tumor-associated antigen information.",
+        title: "Target Biomarker Identification",
+        desc: "Design recognition elements (DNA probes, antibodies, or aptamers) specific to target cancer biomarkers.",
         image: "/SOP/HybriCure Dendritic Cell Vaccine -1.png"
       },
       {
         step: "02",
-        title: "Dendritic Cell Preparation",
-        desc: "Prepare autologous dendritic cells to serve as professional antigen-presenting cells.",
+        title: "Sensor Assembly & Functionalisation",
+        desc: "Assemble sensing layers on screen-printed carbon electrodes using functionalised carbon nanotubes and polymer matrix.",
         image: "/SOP/HybriCure Dendritic Cell Vaccine -2.png"
       },
       {
         step: "03",
-        title: "Electrofusion Processing",
-        desc: "Combine tumor cells and dendritic cells using proprietary electrofusion technology to form hybridoma cells (aHyC).",
+        title: "Saliva Sample Application",
+        desc: "Introduce the non-invasive saliva sample to the biosensing interface for target binding.",
         image: "/SOP/HybriCure Dendritic Cell Vaccine -3.png"
       },
       {
         step: "04",
-        title: "Quality & Marker Verification",
-        desc: "Confirm 100% dendritic cell marker expression and cell viability before preparation.",
+        title: "Cyclic Voltammetry Measurement",
+        desc: "Vary applied voltage and measure electrical current changes corresponding to biomarker interactions.",
         image: "/SOP/HybriCure Dendritic Cell Vaccine -4.png"
       },
       {
         step: "05",
-        title: "Intradermal Administration",
-        desc: "Administer the personalized cell-based vaccine intradermally to stimulate a robust anti-tumor immune response.",
+        title: "Result Interpretation",
+        desc: "Apply validated interpretation methods to convert the measured electrochemical signal into a meaningful test result.",
         image: "/SOP/HybriCure Dendritic Cell Vaccine -5.png"
       }
     ]
   },
   {
-    id: 'rapid-milk-kit',
-    name: 'HPV Rapid Test Kit (Cervical Cancer Screening)',
-    category: 'Molecular Diagnostics & Rapid Testing',
-    sku: 'HPV-RAPID-202',
-    badge: 'PCR-Based Non-Invasive Screening',
-    icon: Milk,
-    image: '/rapid-milk-kit.jpg',
-
-    shortDesc: 'A simple, non-invasive home-to-lab PCR-based HPV DNA rapid test for early cervical cancer screening and high-risk HPV detection.',
-    fullDesc: 'Our HPV Rapid Test Kit provides accessible, non-invasive molecular screening for high-risk Human Papillomavirus (HPV-16, 18, 31, 33, 45, 52, 58) responsible for over 70% of cervical cancers. Designed to overcome screening barriers in India, the kit features a safe self-collection workflow, sample transport media, PCR amplification, secure digital reporting, and integrated follow-up care pathways.',
+    id: 'neurological-biomarker-detection',
+    name: 'Rapid Biomarker Detection for Neurological Disorders',
+    category: 'Neurology & Rapid Screening',
+    sku: 'NEURO-BIO-202',
+    badge: 'Rapid Neurological Assessment',
+    icon: Brain,
+    image: '/Rapid Biomarker Detection for Neurological Disorders - PRODUCT 2.jpg',
+    shortDesc: 'Rapid biomarker-based screening solutions designed to identify biological markers associated with neurological conditions for timely clinical evaluation.',
+    fullDesc: 'Addressing nervous system conditions that affected an estimated 3.4 billion people (43% of the global population) in 2021. This solution focuses on identifying biological markers for Alzheimer’s disease, Parkinson’s disease, stroke, epilepsy, multiple sclerosis, migraine, and traumatic brain injury across all age groups to support timely medical evaluation.',
     specs: [
-      { label: 'Diagnostic Method', value: 'PCR-Based Molecular DNA Amplification' },
-      { label: 'Target Biomarkers', value: 'High-Risk HPV Types (16, 18, 31, 33, 45, 52, 58)' },
-      { label: 'Sample Source', value: 'Non-Invasive Self-Collection Swab' },
-      { label: 'Workflow Duration', value: 'Digital Results Delivered Within Days' },
-      { label: 'Regulatory Path', value: 'CDSCO IVD Classification & NABL Lab Validation' },
-      { label: 'Clinical Indication', value: 'Early Cervical Cancer & High-Risk HPV Screening' }
+      { label: 'Diagnostic Focus', value: 'Nervous System & Neurological Disorders' },
+      { label: 'Global Impact Context', value: '3.4 Billion Affected Worldwide (2021 Estimate)' },
+      { label: 'Target Conditions', value: 'Alzheimer’s, Parkinson’s, Stroke, Epilepsy, MS, Migraine, TBI' },
+      { label: 'Key Biomarkers', value: 'p-tau217, alpha-synuclein, GFAP, NfL, CGRP, UCH-L1' },
+      { label: 'Primary Objective', value: 'Timely Clinical Evaluation & Accessible Screening' },
+      { label: 'Age Group Coverage', value: 'Children, Adolescents, Adults & Older Adults' }
     ],
     features: [
-      'Private Self-Collection: Allows users to take a non-invasive sample conveniently and privately without clinical discomfort.',
-      'Transport Stabilization: Sample is preserved in transport-safe media to maintain integrity during shipment.',
-      'High-Sensitivity PCR Detection: Molecular amplification accurately identifies persistent high-risk HPV DNA strains.',
-      'Digital Health Reporting: Test results are processed and delivered securely via digital report within days.',
-      'Integrated Follow-Up Care: Structured referral pathways and care coordination provided for positive test results.',
-      'Overcomes Screening Barriers: Eliminates geographic, social stigma, and logistical barriers to cervical cancer screening.'
+      'Early Assessment Support: Helps identify concerning symptoms early to support timely medical evaluation.',
+      'Comprehensive Condition Coverage: Targets Alzheimer’s, Parkinson’s, stroke, epilepsy, MS, migraine, and TBI.',
+      'Advanced Biomarker Tracking: Focuses on p-tau, alpha-synuclein, NfL, GFAP, UCH-L1, and genetic variants.',
+      'Multi-Age Group Relevance: Addresses neurological health needs across children, adults, and seniors.',
+      'Convenient Testing Pathways: Designed to contribute to more accessible screening workflows.',
+      'Enhanced Clinical Guidance: Supports healthcare professionals with rapid biological marker insights.'
     ],
     usageGuidelines: [
       {
         step: "01",
-        title: "Private Self-Collection",
-        desc: "Collect sample using the provided private, non-invasive self-collection swab at home.",
+        title: "Condition & Risk Assessment",
+        desc: "Identify initial symptoms and evaluate neurological assessment requirements across appropriate age groups.",
         image: "/SOP/HPV Rapid Test Kit -1.jpeg"
       },
       {
         step: "02",
-        title: "Sample Stabilization",
-        desc: "Place the collected sample into the transport-safe preservation media tube.",
+        title: "Biological Sample Collection",
+        desc: "Collect appropriate sample specimens for neurological biomarker analysis.",
         image: "/SOP/HPV Rapid Test Kit -2.jpg"
       },
       {
         step: "03",
-        title: "Lab Dispatch",
-        desc: "Ship the preserved sample tube to our partner NABL-accredited diagnostic laboratory.",
+        title: "Target Biomarker Screening",
+        desc: "Analyze targeted biological markers such as p-tau, alpha-synuclein, NfL, GFAP, and CGRP.",
         image: "/SOP/HPV Rapid Test Kit -3.jpg"
       },
       {
         step: "04",
-        title: "PCR Amplification & Analysis",
-        desc: "Laboratory extracts DNA and performs PCR-based molecular detection for high-risk HPV strains.",
+        title: "Data Correlation",
+        desc: "Correlate identified biomarker profiles with specific neurological condition indicators.",
         image: "/SOP/HPV Rapid Test Kit -4.jpg"
       },
       {
         step: "05",
-        title: "Digital Report & Care",
-        desc: "Receive secure digital results and access follow-up care coordination if further medical advice is needed.",
+        title: "Clinical Evaluation Support",
+        desc: "Provide timely diagnostic insights to assist qualified healthcare professionals in patient care planning.",
         image: "/SOP/HPV Rapid Test Kit -5.jpg"
       }
     ]
   },
   {
-    id: 'neurology-diagnosis-kit',
-    name: 'Rapid Molecular Screening Kit (Neurology & Oncology)',
-    category: 'Neurology & Molecular Diagnostics',
-    sku: 'NEURO-MOL-303',
-    badge: 'Fast PCR Molecular Diagnostics',
-    icon: Brain,
-    image: '/neurology-diagnosis-kit.jpg',
-    shortDesc: 'Rapid PCR-based molecular screening test for early detection of neurological and oncological disease-associated molecular biomarkers.',
-    fullDesc: 'The Rapid Molecular Screening Kit delivers fast, accessible PCR-based diagnostic solutions in neurology and oncology. Designed to shorten the time from sample collection to accurate diagnostic results, this kit enables clinicians to identify disease-associated molecular biomarkers at an early stage, supporting precision medicine and targeted patient management.',
+    id: 'fertility-solutions',
+    name: 'Male and Female Fertility Solutions',
+    category: 'Reproductive Health & Fertility Care',
+    sku: 'FERTILITY-CARE-303',
+    badge: 'Reproductive Health Assessment',
+    icon: HeartPulse,
+    image: '/Male and Female Fertility Solutions.jpg',
+    shortDesc: 'Comprehensive solutions supporting fertility assessment and reproductive health evaluation for both men and women.',
+    fullDesc: 'Focused on advancing reproductive health awareness and accessible evaluation. Covers female fertility factors including ovarian function, hormonal balance, ovulation, and menstrual health, alongside male fertility factors including sperm health (concentration, movement, shape), hormonal health, and reproductive function for individuals and couples.',
     specs: [
-      { label: 'Kit Category', value: 'PCR Molecular Diagnostic Screening' },
-      { label: 'Target Disciplines', value: 'Neurology & Oncology Biomarkers' },
-      { label: 'Detection Method', value: 'PCR-Based Molecular Amplification' },
-      { label: 'Primary Focus', value: 'Early Detection & Screening' },
-      { label: 'Turnaround Time', value: 'Rapid Processing & Fast Results' },
-      { label: 'Quality Standard', value: 'NABL Lab Certified & Regulatory Aligned' }
+      { label: 'Target Domain', value: 'Male & Female Reproductive Health' },
+      { label: 'Female Focus Areas', value: 'Ovarian Function, Hormones, Ovulation, Menstrual Health' },
+      { label: 'Male Focus Areas', value: 'Sperm Health (Concentration, Movement, Shape) & Hormones' },
+      { label: 'Primary Objective', value: 'Accessible Assessment & Informed Decision-Making' },
+      { label: 'Target Beneficiaries', value: 'Individuals & Couples Planning Families or Seeking Insights' },
+      { label: 'Professional Support', value: 'Designed to Guide Consultations with Healthcare Professionals' }
     ],
     features: [
-      'Rapid PCR Detection: High-precision molecular amplification for immediate identification of key biomarkers.',
-      'Neurology & Oncology Focus: Targeted screening for neurological and tumor-associated molecular alterations.',
-      'Early Stage Identification: Identifies disease risk and biomarkers before advanced disease progression occurs.',
-      'Shortened Sample-to-Result Time: Streamlined testing workflow designed to reduce diagnostic turnaround time.',
-      'Personalized Medicine Integration: Supports patient-specific diagnosis and tailored treatment decision-making.',
-      'Clinical & Lab Ready: Optimized for diagnostic lab partnerships, hospital networks, and clinical evaluations.'
+      'Dual Reproductive Focus: Tailored assessment solutions for both female and male fertility health.',
+      'Female Health Evaluation: Covers ovarian function, hormonal balance, ovulation, and menstrual patterns.',
+      'Male Health Assessment: Evaluates sperm concentration, movement, shape, and reproductive hormones.',
+      'Accessible Care Journey: Designed to support individuals and couples planning to start a family.',
+      'Informed Decision Making: Encourages meaningful conversations with qualified healthcare professionals.',
+      'Holistic Understanding: Addresses multiple factors influencing reproductive success and wellness.'
     ],
     usageGuidelines: [
       {
         step: "01",
-        title: "Sample Collection",
-        desc: "Collect clinical sample following standardized diagnostic collection protocols.",
+        title: "Initial Consultation & Goal Setting",
+        desc: "Determine reproductive health objectives and identify specific evaluation needs for individuals or couples.",
         image: "/SOP/Rapid Molecular Screening Kit-1.jpg"
       },
       {
         step: "02",
-        title: "Sample Preparation",
-        desc: "Place sample into the diagnostic extraction solution to isolate target nucleic acids.",
+        title: "Parameter Selection",
+        desc: "Select targeted assessment parameters covering female ovarian/hormonal function or male sperm health.",
         image: "/SOP/Rapid Molecular Screening Kit-2.jpg"
       },
       {
         step: "03",
-        title: "PCR Molecular Testing",
-        desc: "Perform PCR amplification to detect specific neurological or oncological biomarkers.",
+        title: "Sample & Profile Evaluation",
+        desc: "Evaluate key reproductive metrics including hormonal balance, ovulatory function, and sperm characteristics.",
         image: "/SOP/Rapid Molecular Screening Kit -3.jpg"
       },
       {
         step: "04",
-        title: "Result Interpretation",
-        desc: "Evaluate amplified biomarker profiles using standard clinical diagnostic parameters.",
+        title: "Comprehensive Analysis",
+        desc: "Review reproductive assessment findings in the context of individual health and medical history.",
         image: "/SOP/Rapid Molecular Screening Kit-4.jpg"
       },
       {
         step: "05",
-        title: "Clinical Documentation",
-        desc: "Record findings for personalized patient treatment planning and clinical management.",
+        title: "Healthcare Guidance & Next Steps",
+        desc: "Use structured insights to support informed discussions and consultations with qualified healthcare professionals.",
         image: "/SOP/Rapid Molecular Screening Kit-5.png"
       }
     ]

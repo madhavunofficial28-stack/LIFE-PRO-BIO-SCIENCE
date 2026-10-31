@@ -13,7 +13,9 @@ import {
   Stethoscope,
   Sparkles,
   Microscope,
-  Award
+  Award,
+  HeartPulse,
+  Brain
 } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -72,25 +74,25 @@ const AboutPage = () => {
   const coreValues = [
     {
       title: "Uncompromising Quality",
-      desc: "ISO-certified testing and clinical validation to ensure high accuracy across all diagnostic and therapeutic applications.",
+      desc: "Validated testing protocols to ensure high precision across non-invasive cancer screening, neurological assessment, and fertility diagnostics.",
       icon: ShieldCheck,
       color: "bg-blue-50 text-blue-600 border-blue-200"
     },
     {
       title: "Scientific Innovation",
-      desc: "Pioneering electrofusion platform (HybriCure®) and rapid PCR-based molecular diagnostic technologies.",
+      desc: "Pioneering Cyclic Voltammetry electrochemical biosensors and multi-marker panel screening technologies.",
       icon: Lightbulb,
       color: "bg-amber-50 text-amber-600 border-amber-200"
     },
     {
       title: "Global Accessibility",
-      desc: "Expanding access to advanced molecular screening and personalized cancer immunotherapy worldwide.",
+      desc: "Expanding access to simple, non-invasive screening tools to overcome awareness gaps and clinical barriers globally.",
       icon: Globe,
       color: "bg-teal-50 text-teal-600 border-teal-200"
     },
     {
       title: "Ethical Partnership",
-      desc: "Committed to rigorous clinical research, patient safety, transparent reporting, and medical excellence.",
+      desc: "Committed to clear diagnostic insights, patient privacy, transparent outcomes, and medical excellence.",
       icon: Handshake,
       color: "bg-indigo-50 text-indigo-600 border-indigo-200"
     }
@@ -134,10 +136,10 @@ const AboutPage = () => {
       {/* HERO SECTION */}
       <section className="about-header text-center max-w-5xl mx-auto space-y-5 w-full relative z-10 mb-16 md:mb-20">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 leading-tight">
-          Pioneering <span className="bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent">Precision Diagnostics & Medicine</span>
+          Pioneering <span className="bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent">Accessible Diagnostics & Healthcare</span>
         </h1>
         <p className="text-slate-800 text-base md:text-xl leading-relaxed max-w-4xl mx-auto font-medium">
-          Advancing human health by bridging state-of-the-art molecular diagnostics, rapid PCR testing, and personalized cell-based immunotherapies in oncology and neurology.
+          Advancing human health through non-invasive saliva biosensing for cancer detection, rapid biomarker screening for neurological disorders, and comprehensive reproductive fertility solutions.
         </p>
       </section>
 
@@ -150,7 +152,7 @@ const AboutPage = () => {
               Our Clinical Focus
             </span>
             <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 leading-snug">
-              Transforming Patient Outcomes Through Scientific Innovation
+              Transforming Healthcare Access Through Scientific Innovation
             </h2>
           </div>
 
@@ -163,28 +165,28 @@ const AboutPage = () => {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
                   </span>
-                  Next-Gen Therapies & Diagnostics
+                  Next-Gen Diagnostic Solutions
                 </div>
                 <h3 className="text-2xl md:text-3xl font-extrabold text-slate-900 leading-tight">
-                  Bridging Molecular Precision & Cell Immunotherapy
+                  Addressing Critical Screening & Assessment Barriers
                 </h3>
               </div>
 
               <p className="text-slate-700 text-base md:text-lg leading-relaxed font-medium">
-                At <strong>Life Pro Biosciences</strong>, our mission centers on accelerating precision detection and delivering personalized therapeutic solutions. Through our proprietary <strong>HybriCure® Electrofusion Platform</strong> and rapid molecular testing kits, we target critical challenges in oncology and neurology.
+                At <strong>Life Pro Biosciences</strong>, we are committed to closing screening gaps in critical health areas. With breast, cervical, and prostate cancers creating urgent diagnostic needs, and neurological conditions affecting over 3.4 billion people worldwide, our focus is on rapid, accessible evaluation.
               </p>
               <p className="text-slate-600 text-sm md:text-base leading-relaxed font-medium">
-                By fusing autologous tumor cells with dendritic cells, our immunotherapy platform stimulates comprehensive immune responses against target malignancies, validated by clinical trials showing extended overall survival and favorable safety profiles.
+                By harnessing electrochemical Cyclic Voltammetry, advanced neurological biomarker tracking, and holistic reproductive health assessments, we deliver diagnostic technologies designed to empower patients and support clinical care teams.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2">
                 <div className="border-l-4 border-blue-600 pl-4 py-1 bg-white/60 backdrop-blur-sm rounded-r-2xl p-2">
-                  <div className="text-2xl font-extrabold text-blue-700">58.8 Months</div>
-                  <div className="text-xs text-slate-700 font-semibold mt-1">Median Overall Survival Reported in Clinical Trials</div>
+                  <div className="text-2xl font-extrabold text-blue-700">3.4 Billion</div>
+                  <div className="text-xs text-slate-700 font-semibold mt-1">People Affected Worldwide by Neurological Conditions</div>
                 </div>
                 <div className="border-l-4 border-teal-500 pl-4 py-1 bg-white/60 backdrop-blur-sm rounded-r-2xl p-2">
-                  <div className="text-2xl font-extrabold text-teal-700">0% SAE</div>
-                  <div className="text-xs text-slate-700 font-semibold mt-1">Serious Adverse Events Profile Reported</div>
+                  <div className="text-2xl font-extrabold text-teal-700">Non-Invasive</div>
+                  <div className="text-xs text-slate-700 font-semibold mt-1">Saliva Biosensing & Accessible Testing Pathways</div>
                 </div>
               </div>
             </div>
@@ -192,7 +194,7 @@ const AboutPage = () => {
             <div className="animate-section lg:col-span-6 w-full">
               <div className="overflow-hidden rounded-3xl shadow-2xl border border-white group w-full bg-slate-900">
                 <img 
-                  src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1200&q=80" 
+                  src="/Diagnostic Solutions-ABOUT US.png" 
                   alt="Advanced Biotechnology Research Laboratory" 
                   className="w-full h-80 md:h-[450px] object-cover opacity-95 group-hover:scale-105 transition-transform duration-700"
                 />
@@ -208,7 +210,7 @@ const AboutPage = () => {
               Mission & Vision Pillars
             </h2>
             <p className="text-slate-600 text-sm md:text-base font-medium max-w-lg mx-auto">
-              Guiding the future of early biomarker screening, rapid PCR diagnostics, and cellular immunotherapies.
+              Guiding the future of non-invasive screening, neurological assessment, and reproductive fertility health.
             </p>
           </div>
 
@@ -242,15 +244,15 @@ const AboutPage = () => {
                 </h3>
 
                 <p className="text-slate-700 text-base md:text-lg leading-relaxed font-medium mb-8">
-                  To identify, develop, and commercialize innovative technologies in oncology and neurology that enable earlier detection, more precise diagnosis, and personalized treatment—making advanced healthcare more accessible to patients worldwide
+                  To develop, validate, and commercialize accessible diagnostic and screening solutions that enable earlier detection, non-invasive testing, and informed care planning for cancer, neurological conditions, and fertility health.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-8">
                   <span className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 bg-slate-100/80 px-3 py-1.5 rounded-lg border border-slate-200">
-                    <Dna size={14} className="text-blue-600" /> HybriCure® Platform
+                    <Activity size={14} className="text-blue-600" /> Cyclic Voltammetry CV
                   </span>
                   <span className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 bg-slate-100/80 px-3 py-1.5 rounded-lg border border-slate-200">
-                    <Microscope size={14} className="text-teal-600" /> Rapid Molecular Screening
+                    <Brain size={14} className="text-teal-600" /> Neurological Biomarkers
                   </span>
                 </div>
               </div>
@@ -258,7 +260,7 @@ const AboutPage = () => {
               <div className="relative z-10 pt-6 border-t border-slate-200/80 flex items-center justify-between text-xs font-bold text-slate-600">
                 <div className="flex items-center gap-2 text-blue-900 bg-blue-50/90 px-3.5 py-2 rounded-xl border border-blue-100">
                   <Activity size={16} className="text-blue-600" />
-                  <span>ISO & Clinical Precision Certified</span>
+                  <span>Precision Biomarker Screening</span>
                 </div>
               </div>
             </div>
@@ -292,15 +294,15 @@ const AboutPage = () => {
                 </h3>
 
                 <p className="text-slate-700 text-base md:text-lg leading-relaxed font-medium mb-8">
-                  To advance the future of personalized medicine by transforming the way cancer and neurological diseases are detected, diagnosed, and treated worldwide.
+                  To contribute to a future where non-invasive cancer detection, early neurological assessment, and reproductive health evaluation are universally accessible, informed, and supportive for individuals worldwide.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-8">
                   <span className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 bg-slate-100/80 px-3 py-1.5 rounded-lg border border-slate-200">
-                    <Stethoscope size={14} className="text-teal-600" /> Oncology & Neurology
+                    <HeartPulse size={14} className="text-teal-600" /> Fertility Care
                   </span>
                   <span className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 bg-slate-100/80 px-3 py-1.5 rounded-lg border border-slate-200">
-                    <Globe size={14} className="text-blue-600" /> Global Clinical Reach
+                    <Globe size={14} className="text-blue-600" /> Universal Health Impact
                   </span>
                 </div>
               </div>
@@ -308,7 +310,7 @@ const AboutPage = () => {
               <div className="relative z-10 pt-6 border-t border-slate-200/80 flex items-center justify-between text-xs font-bold text-slate-600">
                 <div className="flex items-center gap-2 text-teal-900 bg-teal-50/90 px-3.5 py-2 rounded-xl border border-teal-100">
                   <Award size={16} className="text-teal-600" />
-                  <span>Clinical Trial Proven Results</span>
+                  <span>Accessible & Patient-Centered Care</span>
                 </div>
               </div>
             </div>

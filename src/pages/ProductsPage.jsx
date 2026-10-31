@@ -57,20 +57,20 @@ const ProductsPage = () => {
       className="w-full bg-gradient-to-br from-blue-100 via-teal-50 to-blue-200 text-slate-800 font-sans min-h-screen pt-24 pb-20 px-6 md:px-12 lg:px-20"
     >
       <div className="max-w-7xl mx-auto space-y-12">
-        
+         
         {/* PAGE HEADER */}
         <div className="products-header text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100/90 border border-blue-200/80 text-blue-700 text-xs md:text-sm font-bold tracking-wide shadow-sm">
             <Microscope size={16} />
             <span>Product Catalog</span>
           </div>
-          
+           
           <h1 className="text-3xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight">
-            Clinical Diagnostic Solutions
+            Clinical & Diagnostic Solutions
           </h1>
-          
+           
           <p className="text-slate-600 text-sm md:text-base lg:text-lg font-medium leading-relaxed">
-            Explore our line of high-sensitivity microfluidic kits, rapid testing systems, and precision clinical platforms.
+            Explore our line of non-invasive saliva cancer screening biosensors, rapid neurological biomarker kits, and reproductive health solutions.
           </p>
         </div>
 
@@ -99,12 +99,12 @@ const ProductsPage = () => {
               {/* PRODUCT DETAILS */}
               <div className="lg:col-span-7 flex flex-col justify-between space-y-6">
                 <div className="space-y-4">
-                  
+                   
                   {/* CATEGORY & SKU TAGS */}
                   <div className="flex items-center justify-between gap-4 flex-wrap">
                     <span className="inline-flex items-center gap-1.5 text-xs font-bold text-teal-700 bg-teal-100/80 px-3 py-1 rounded-full border border-teal-200/80">
                       <Tag size={12} />
-                      {product.category || "Diagnostic Kit"}
+                      {product.category || "Diagnostic Solution"}
                     </span>
                     {product.sku && (
                       <span className="text-xs font-semibold text-slate-500 bg-slate-100/80 px-2.5 py-1 rounded-md border border-slate-200/60">

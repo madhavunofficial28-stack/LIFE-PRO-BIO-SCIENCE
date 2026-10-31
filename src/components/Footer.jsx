@@ -20,7 +20,7 @@ const Footer = () => {
           </a>
           
           <p className="text-slate-600 text-sm leading-relaxed mb-6 font-medium">
-            Pioneering precision molecular diagnostics, rapid PCR testing, and cell-based therapeutic technologies in oncology and clinical neurology.
+            Pioneering non-invasive saliva-based cancer biomarker detection, rapid neurological disorder screening, and reproductive health solutions worldwide.
           </p>
 
           {/* Social Media Links */}
@@ -84,9 +84,9 @@ const Footer = () => {
           <div>
             <h4 className="text-slate-900 font-bold mb-4 text-sm uppercase tracking-wider">Featured Products</h4>
             <ul className="space-y-2.5 text-sm font-medium text-slate-700">
-              <li><a href="/product/cancer-kit" className="hover:text-teal-700 transition-colors">Cancer Care & Diagnostics Kit</a></li>
-              <li><a href="/product/neurology-diagnosis-kit" className="hover:text-teal-700 transition-colors">Neurology Diagnosis Kit</a></li>
-              <li><a href="/product/rapid-milk-kit" className="hover:text-teal-700 transition-colors">Rapid Milk Testing Kit</a></li>
+              <li><a href="/product/saliva-cancer-detection" className="hover:text-teal-700 transition-colors">Saliva-Based Cancer Screening</a></li>
+              <li><a href="/product/neurological-disorders-detection" className="hover:text-teal-700 transition-colors">Neurological Disorders Detection</a></li>
+              <li><a href="/product/fertility-solutions" className="hover:text-teal-700 transition-colors">Fertility Solutions</a></li>
             </ul>
           </div>
 
@@ -115,7 +115,7 @@ const Footer = () => {
 
       {/* BOTTOM COPYRIGHT LINE */}
       <div className="w-full border-t border-slate-300/60 mt-10 pt-4 text-left text-xs text-slate-600 font-medium">
-        © {new Date().getFullYear()} Life Bio Science Ltd. All rights reserved. Precision Molecular Diagnostics & Immunotherapy.
+        © {new Date().getFullYear()} Life Bio Science Ltd. All rights reserved. Precision Diagnostics & Healthcare Solutions.
       </div>
     </footer>
   );

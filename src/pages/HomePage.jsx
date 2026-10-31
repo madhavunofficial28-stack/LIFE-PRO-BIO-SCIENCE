@@ -14,7 +14,9 @@ import {
   ShieldAlert,
   Building2,
   CheckCircle2,
-  Timer
+  Timer,
+  Brain,
+  Activity
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
@@ -80,17 +82,17 @@ const HomePage = () => {
             maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%)'
           }}
         />
-        
+         
         <div className="absolute inset-0 bg-gradient-to-b from-blue-100/60 via-blue-50/20 to-transparent -z-10 pointer-events-none" />
 
         <div className="home-hero-content w-full max-w-5xl mx-auto px-6 md:px-12 space-y-6 relative z-10 pt-10">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-900 leading-tight">
             Innovative Diagnostic Solutions & <br className="hidden md:block" />
-            <span className="bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent">Personalized Medicine</span>
+            <span className="bg-gradient-to-r from-blue-700 to-teal-600 bg-clip-text text-transparent">Personalized Healthcare</span>
           </h1>
 
           <p className="text-lg md:text-xl text-slate-700 max-w-3xl mx-auto leading-relaxed font-medium">
-            Advancing early detection, molecular diagnostics, rapid PCR testing, and cell-based immunotherapies in oncology and neurology to transform personalized patient care worldwide.
+            Advancing non-invasive saliva-based cancer screening, rapid neurological biomarker detection, and comprehensive male and female fertility solutions worldwide[cite: 1].
           </p>
 
           <div className="pt-4 flex justify-center">
@@ -108,7 +110,7 @@ const HomePage = () => {
       <section className="animate-section w-full z-10 relative pt-12 px-4 md:px-12 lg:px-16">
         <div className="w-full space-y-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center w-full">
-            
+             
             {/* 🖼️ LEFT COLUMN: ONLY IMAGE */}
             <div className="lg:col-span-5 relative rounded-3xl overflow-hidden shadow-xl min-h-[420px] h-full border border-slate-200/80">
               <img 
@@ -120,7 +122,7 @@ const HomePage = () => {
 
             {/* 📄 RIGHT COLUMN: ALL TEXT & POINTS */}
             <div className="lg:col-span-7 space-y-6 pr-4 md:pr-10 flex flex-col justify-center">
-              
+               
               {/* Main Heading */}
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight">
                 Precision Diagnostics Built For Human Impact
@@ -128,43 +130,43 @@ const HomePage = () => {
 
               {/* Intro Paragraph */}
               <p className="text-slate-700 text-lg leading-relaxed font-normal">
-                At <strong className="text-slate-900 font-semibold">Life Pro Biosciences</strong>, we develop and commercialize innovative solutions in oncology and neurology, bridging cutting-edge molecular diagnostics with personalized cell-based therapies.
+                At <strong className="text-slate-900 font-semibold">Life Pro Biosciences</strong>, we develop accessible screening and diagnostic solutions, bridging non-invasive saliva biosensing, neurological assessment, and reproductive healthcare[cite: 1].
               </p>
 
               {/* Points List */}
               <div className="space-y-5 pt-2">
                 <div className="flex items-start gap-4">
                   <div className="mt-1 p-2.5 rounded-full bg-blue-600/10 text-blue-700 shrink-0">
-                    <Microscope size={24} />
+                    <Activity size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-slate-900">PCR-Based Rapid Molecular Screening</h3>
+                    <h3 className="text-lg font-bold text-slate-900">Saliva-Based Cancer Screening</h3>
                     <p className="text-slate-600 text-sm mt-0.5 leading-relaxed">
-                      Fast, accessible diagnostic solutions in oncology and neurology designed to shorten time from sample collection to accurate results.
+                      Electrochemical biosensing using Cyclic Voltammetry (CV) to detect breast, cervical, and prostate cancer biomarkers non-invasively[cite: 1].
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="mt-1 p-2.5 rounded-full bg-teal-600/10 text-teal-700 shrink-0">
-                    <Dna size={24} />
+                    <Brain size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-slate-900">HybriCure® Electrofusion Platform</h3>
+                    <h3 className="text-lg font-bold text-slate-900">Rapid Neurological Biomarker Detection</h3>
                     <p className="text-slate-600 text-sm mt-0.5 leading-relaxed">
-                      Proprietary cell-based immunotherapy combining autologous tumor and dendritic cells to stimulate multi-antigen immune activation.
+                      Targeting biological markers for Alzheimer’s, Parkinson’s, stroke, epilepsy, and other nervous system conditions to support early assessment[cite: 1].
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
                   <div className="mt-1 p-2.5 rounded-full bg-blue-600/10 text-blue-700 shrink-0">
-                    <Award size={24} />
+                    <HeartPulse size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-slate-900">Clinical Efficacy & Safety Profile</h3>
+                    <h3 className="text-lg font-bold text-slate-900">Male & Female Fertility Solutions</h3>
                     <p className="text-slate-600 text-sm mt-0.5 leading-relaxed">
-                      Supported by reported clinical data showing 58.8 months median overall survival and a 0% serious adverse events profile.
+                      Comprehensive reproductive health evaluations covering ovarian function, hormonal balance, ovulation, and sperm health[cite: 1].
                     </p>
                   </div>
                 </div>
