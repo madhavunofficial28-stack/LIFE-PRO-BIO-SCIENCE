@@ -92,7 +92,7 @@ const HomePage = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-slate-700 max-w-3xl mx-auto leading-relaxed font-medium">
-            Advancing non-invasive saliva-based cancer screening, rapid neurological biomarker detection, and comprehensive male and female fertility solutions worldwide[cite: 1].
+            Advancing non-invasive saliva-based cancer screening, rapid neurological biomarker detection, and comprehensive male and female fertility solutions worldwide.
           </p>
 
           <div className="pt-4 flex justify-center">
@@ -130,7 +130,7 @@ const HomePage = () => {
 
               {/* Intro Paragraph */}
               <p className="text-slate-700 text-lg leading-relaxed font-normal">
-                At <strong className="text-slate-900 font-semibold">Life Pro Biosciences</strong>, we develop accessible screening and diagnostic solutions, bridging non-invasive saliva biosensing, neurological assessment, and reproductive healthcare[cite: 1].
+                At <strong className="text-slate-900 font-semibold">Life Pro Biosciences</strong>, we develop accessible screening and diagnostic solutions, bridging non-invasive saliva biosensing, neurological assessment, and reproductive healthcare.
               </p>
 
               {/* Points List */}
@@ -142,7 +142,7 @@ const HomePage = () => {
                   <div>
                     <h3 className="text-lg font-bold text-slate-900">Saliva-Based Cancer Screening</h3>
                     <p className="text-slate-600 text-sm mt-0.5 leading-relaxed">
-                      Electrochemical biosensing using Cyclic Voltammetry (CV) to detect breast, cervical, and prostate cancer biomarkers non-invasively[cite: 1].
+                      Electrochemical biosensing using Cyclic Voltammetry (CV) to detect breast, cervical, and prostate cancer biomarkers non-invasively.
                     </p>
                   </div>
                 </div>
@@ -154,7 +154,7 @@ const HomePage = () => {
                   <div>
                     <h3 className="text-lg font-bold text-slate-900">Rapid Neurological Biomarker Detection</h3>
                     <p className="text-slate-600 text-sm mt-0.5 leading-relaxed">
-                      Targeting biological markers for Alzheimer’s, Parkinson’s, stroke, epilepsy, and other nervous system conditions to support early assessment[cite: 1].
+                      Targeting biological markers for Alzheimer’s, Parkinson’s, stroke, epilepsy, and other nervous system conditions to support early assessment.
                     </p>
                   </div>
                 </div>
@@ -166,7 +166,7 @@ const HomePage = () => {
                   <div>
                     <h3 className="text-lg font-bold text-slate-900">Male & Female Fertility Solutions</h3>
                     <p className="text-slate-600 text-sm mt-0.5 leading-relaxed">
-                      Comprehensive reproductive health evaluations covering ovarian function, hormonal balance, ovulation, and sperm health[cite: 1].
+                      Comprehensive reproductive health evaluations covering ovarian function, hormonal balance, ovulation, and sperm health.
                     </p>
                   </div>
                 </div>
